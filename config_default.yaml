@@ -10,3 +10,7 @@ users:
     role: 0
 pages:
   # Add your pages here.
+  - title: Overview
+    widgets:
+      - type: amount_line_chart
+        bucket: Users
