@@ -11,8 +11,8 @@ var sub = require('redis').createClient(config.redis.port, config.redis.host);
 var app = express();
 
 var cookieParser = express.cookieParser(config.secret);
-var sessionStore = new (require('connect')).
-      middleware.session.MemoryStore();
+
+var sessionStore = new express.session.MemoryStore();
 
 var middleware = require('./middleware');
 
